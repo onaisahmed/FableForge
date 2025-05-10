@@ -1,4 +1,4 @@
-package fableforge;
+package fableforge.app;
 
 public class Main {
 }

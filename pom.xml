@@ -33,6 +33,18 @@
             <artifactId>json</artifactId>
             <version>20240303</version>
         </dependency>
+
+        <!-- LanguageTool library-->
+        <dependency>
+            <groupId>org.languagetool</groupId>
+            <artifactId>language-en</artifactId>
+            <version>5.9</version>
+        </dependency>
+        <dependency>
+            <groupId>org.languagetool</groupId>
+            <artifactId>languagetool-core</artifactId>
+            <version>5.9</version>
+        </dependency>
     </dependencies>
 
     <build>

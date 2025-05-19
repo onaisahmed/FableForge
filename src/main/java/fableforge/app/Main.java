@@ -9,9 +9,9 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter you Prompt");
         String topic = sc.nextLine();
-        if(topic == ""){
+        if (topic == "") {
             System.out.println("Enter prompt first");
-        }else{
+        } else {
             String story = StoreGenerator.generateStory(topic);
             System.out.println("Generated Story:");
             System.out.println(story);

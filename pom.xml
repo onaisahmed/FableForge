@@ -63,8 +63,26 @@
                 <version>0.0.8</version>
                 <configuration>
                     <mainClass>fableforge.app.Main</mainClass>
+                    <options>
+                        <option>-Djdk.xml.totalEntitySizeLimit=0</option>
+                    </options>
+                </configuration>
+            </plugin>
+
+            <!-- JAR Plugin with Manifest -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>fableforge.app.Main</mainClass>
+                        </manifest>
+                    </archive>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 </project>

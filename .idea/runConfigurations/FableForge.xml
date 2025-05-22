@@ -2,7 +2,7 @@
   <configuration default="false" name="FableForge" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="fableforge.app.Main" />
     <module name="FableForge" />
-    <option name="VM_PARAMETERS" value="-Djdk.xml.totalEntitySizeLimit=0 " />
+    <option name="VM_PARAMETERS" value="-Djdk.xml.totalEntitySizeLimit=0" />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>

@@ -39,7 +39,7 @@ public class CustomButton {
 
     public Button getButton() {
         return button;
-    }ui
+    }
 
     public void setOnAction(javafx.event.EventHandler<javafx.event.ActionEvent> handler) {
         button.setOnAction(handler);

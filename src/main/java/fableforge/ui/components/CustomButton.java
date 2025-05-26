@@ -33,13 +33,13 @@ public class CustomButton {
         button.setOnMouseEntered(e -> button.setEffect(hoverGlow));
         button.setOnMouseExited(e -> button.setEffect(null));
 
-        button.setLayoutX(435);
+        button.setLayoutX(415);
         button.setLayoutY(178);
     }
 
     public Button getButton() {
         return button;
-    }
+    }ui
 
     public void setOnAction(javafx.event.EventHandler<javafx.event.ActionEvent> handler) {
         button.setOnAction(handler);

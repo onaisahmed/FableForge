@@ -24,15 +24,21 @@ public class Main extends Application {
             String story = StoreGenerator.generateStory(userInput);
 
             // Display the generated story in the StoryDisplayBox
-            mainScreen.getStoryBox().appendText("Topic: " + userInput + "\n\n");
-            mainScreen.getStoryBox().appendText("Story: " + story + "\n\n");
+//            mainScreen.getStoryBox().appendText("Topic: " + userInput + "\n\n");
+            mainScreen.getStoryBox().appendText( story);
 
             // Clear the prompt input
-            mainScreen.getPromptBox().clear();
+//            mainScreen.getPromptBox().clear();
         });
 
         Scene scene = new Scene(mainScreen.getRoot(), 600, 600); // Adjust size as needed
         primaryStage.setTitle("FableForge Story Generator");
+        // Disable resizing
+        primaryStage.setResizable(false);
+
+        // Optional: set fixed size (if needed)
+        primaryStage.setWidth(613);
+        primaryStage.setHeight(637);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

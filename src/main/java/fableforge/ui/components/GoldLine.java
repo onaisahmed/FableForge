@@ -5,13 +5,13 @@ import javafx.scene.shape.Line;
 
 public class GoldLine extends Line {
 
-    public GoldLine() {
-        this.setStartX(35);
-        this.setEndX(565);
-        this.setStartY(165);
-        this.setEndY(165);
+    public GoldLine(int startX, int startY, int endX, int endY) {
+        this.setStartX(startX);
+        this.setEndX(endX);
+        this.setStartY(startY);
+        this.setEndY(endY);
         this.setStroke(Color.GOLD);
-        this.setStrokeWidth(1.5);
+        this.setStrokeWidth(1);
         this.setOpacity(0.2);
         this.setSmooth(true);
     }

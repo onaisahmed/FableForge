@@ -33,7 +33,7 @@ public class CustomButton {
         button.setOnMouseEntered(e -> button.setEffect(hoverGlow));
         button.setOnMouseExited(e -> button.setEffect(null));
 
-        button.setLayoutX(435);
+        button.setLayoutX(415);
         button.setLayoutY(178);
     }
 

@@ -16,16 +16,17 @@ public class Main extends Application {
         mainScreen.getButton().setOnAction(e -> {
             String userInput = mainScreen.getPromptBox().getText();
             if (userInput.trim().isEmpty()) {
-                System.out.println("Please enter a prompt.");
+                mainScreen.getStoryBox().appendText("Please enter a prompt to generate Story!");
                 return;
             }
+            // Clearing previous story first [BUG fixed]
+            mainScreen.getStoryBox().clear();
 
             // Generate story using your core logic
             String story = StoreGenerator.generateStory(userInput);
 
             // Display the generated story in the StoryDisplayBox
-//            mainScreen.getStoryBox().appendText("Topic: " + userInput + "\n\n");
-            mainScreen.getStoryBox().appendText( story);
+            mainScreen.getStoryBox().appendText(story);
 
             // Clear the prompt input
 //            mainScreen.getPromptBox().clear();

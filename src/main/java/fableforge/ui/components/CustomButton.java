@@ -27,8 +27,8 @@ public class CustomButton {
 
         hoverGlow = new DropShadow();
         hoverGlow.setColor(Color.GOLD);
-        hoverGlow.setRadius(6);
-        hoverGlow.setSpread(0.5);
+        hoverGlow.setRadius(5);
+        hoverGlow.setSpread(0.2);
 
         button.setOnMouseEntered(e -> button.setEffect(hoverGlow));
         button.setOnMouseExited(e -> button.setEffect(null));
